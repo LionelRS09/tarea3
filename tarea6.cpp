@@ -1,26 +1,25 @@
 #include <iostream>
 using namespace std;
-main() {
-/*	string nombre;
-	int dato;
-	cout<<"Ingrese dato: ";
-	cin>>dato;
-	cin.ignore();
-	cout<<"Ingrese nombre completo: ";
-	getline(cin,nombre);
-	
-	cout<<nombre<<endl;*/
-	
-	string semana [7]={"Lunes","Martes","Miercoles","jueves","Viernes","Sabado","Domingo"	
-	};
-	
-	semana[3]= "JUEVES";
-	for (int i=0;i<7;i++){
-		cout<<semana[i]<<endl;
-	}
-	
-	
-	
-	
-	system("pause");
+
+int suma3(int num1,int num2,int num3){
+int resultado=0;
+resultado= num1+num2+num3;
+return resultado;
+}	
+void suma(int &num1,int &num2){
+	int resultado = 0;
+	num1+=1;
+	num2+=1;
+	resultado = num1+num2;
+	cout<<resultado<<endl;
 }
+
+main(){
+	int a=10,b=20;
+	suma(a,b);
+	cout<<"a: "<<a<<endl;
+	cout<<"b: "<<b<<endl;
+	
+system("pause");
+}
+
